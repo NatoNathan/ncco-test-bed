@@ -1,0 +1,19 @@
+{
+  "name": "test-bed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "conversation-api-function run .",
+    "dev": "conversation-api-function run . | bunyan",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "conversation-api-function": "0.0.16",
+    "patch-package": "^6.5.0",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}

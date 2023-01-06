@@ -1,0 +1,13 @@
+diff --git a/node_modules/conversation-api-function/src/utils.js b/node_modules/conversation-api-function/src/utils.js
+index 1d85f9e..2d1bec2 100644
+--- a/node_modules/conversation-api-function/src/utils.js
++++ b/node_modules/conversation-api-function/src/utils.js
+@@ -17,7 +17,7 @@ function generateToken({ private_key, application_id, acl, sub }) {
+ 
+ 
+   const now = (Date.now() / 1000) 
+-  const ext = now + (((60 * 60)  * 60 ) * 24 )
++  const ext = Math.floor(now + (((60 * 60)  * 60 ) * 24 ))
+   const props = {
+     "iat": now,
+     "nbf": now,
